@@ -41,7 +41,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">
-            <p className="text-xl font-semibold mb-4">Categories</p>
+            <p className="text-xl font-semibold mb-4">Services</p>
             <ul className="space-y-2">
               <li className="flex items-center">
                 <FaHouse className="mr-2" />

@@ -7,11 +7,11 @@ import Deals from '../components/deals';
 import Services from '../components/services';
 import Review from '../components/review';
 import Insta from '../components/insta';
-import Form from '../components/form';
 import scrollIcon from '../assets/icons/topArrowIcon.png';
 
 import Footer from '@/components/footer';
 import Hero from '@/components/hero';
+import Love from '@/components/love';
 
 const HomePage = () => {
   const [showButton, setShowButton] = useState(false);
@@ -61,9 +61,9 @@ const HomePage = () => {
         />
         <Services />
         <Deals />
-        <Review />
         <Insta />
-        <Form />
+        <Review />
+        <Love/>
         <Footer />
         {showButton && (
           <div className="fixed bottom-24 right-10 z-50">

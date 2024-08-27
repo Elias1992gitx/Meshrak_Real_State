@@ -69,7 +69,7 @@ const Header = () => {
 
       <ul
         style={{ color: `${headerText}` }}
-        className="text-sm font-bold hidden lg:text-xl font-style: normal sm:flex"
+        className="text-sm font-bold hidden lg:text-xl sm:flex"
       >
         <li className=" p-4 hover:text-orange-500">
           <Link href="#about-container">About</Link>
