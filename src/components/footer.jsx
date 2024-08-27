@@ -76,10 +76,6 @@ const Footer = () => {
                 <FaMapMarkerAlt className="mr-2" />
                 <span>Addis Ababa, Ethiopia</span>
               </li>
-              <li className="flex items-center">
-                <FaPhoneAlt className="mr-2" />
-                <span>0500 000 00 00</span>
-              </li>
             </ul>
           </div>
         </div>
