@@ -2,13 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import searchIcon from '../../src/assets/icons/search.png';
-
+import mesrakreal from '../../src/assets/images/mesrakreal.png'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import ThemeChanger from './themeChanger';
 
 const Header = () => {
   const [header, setHeader] = useState(false);
-  const [headerColor, setHeaderColor] = useState('transparent');
+  const [headerColor, setHeaderColor] = useState('#58555dea')
   const [headerText, setHeaderText] = useState('white');
 
   const handleHeader = () => {
@@ -19,18 +19,21 @@ const Header = () => {
     setHeader(false);
   };
 
-  useEffect(() => {
-    const handleColorChange = () => {
-      if (window.scrollY >= 250) {
-        setHeaderColor('linear-gradient(to right, #8e2de2, #4a00e0)');
-        setHeaderText('#ffffff');
-      } else {
-        setHeaderColor('transparent');
-        setHeaderText('#ffffff');
-      }
-    };
-    window.addEventListener('scroll', handleColorChange);
-  }, []);
+ useEffect(() => {
+   const handleColorChange = () => {
+     if (window.scrollY >= 250) {
+      //  setHeaderColor('linear-gradient(to left, black, white)')
+      // setHeaderColor('linear-gradient(to right, black, transparent 80%, black)')
+      setHeaderColor('#58555dea')
+       setHeaderText('#ffffff')
+     } else{
+       setHeaderColor('#5b5a5bea')
+       setHeaderText('#ffffff')
+     }
+     
+   }
+   window.addEventListener('scroll', handleColorChange)
+ }, [])
 
   return (
     <div
@@ -41,24 +44,24 @@ const Header = () => {
 
       <div className="max-w-[1240px] m-5 flex justify-between items-center p-4">
         <Link href="/">
-          <h1
-            style={{ color: `${headerText}` }}
-            className="py-2 text-2xl font-bold hover:text-orange-500"
-          >
-            Constructor
-          </h1>
+          <Image
+            src={mesrakreal}
+            alt="mesrak"
+            className="w-28 h-20 self-center"
+            style={{ filter: 'invert(100%)' }} // Apply white filter
+          />
         </Link>
       </div>
 
       {/* Search */}
 
-      <div className=" hidden sm:flex">
-        <Image src={searchIcon} alt="Menu" className="w-4 h-4 self-center" />
+      <div className=" text-xl hidden sm:flex">
+        <Image src={searchIcon} alt="Menu" className=" w-4 h-4 self-center " />
         <input
           type="text"
           placeholder="Search"
           maxLength="20"
-          className="w-40 bg-transparent outline-none placeholder-gray-300 mx-4 py-2 text-white capitalize"
+          className="text-xl w-40 bg-transparent outline-none placeholder-gray-300 mx-4 py-2 text-white capitalize"
         />
       </div>
 
@@ -66,8 +69,7 @@ const Header = () => {
 
       <ul
         style={{ color: `${headerText}` }}
-        className="text-sm font-bold hidden sm:flex
-      "
+        className="text-sm font-bold hidden lg:text-xl font-style: normal sm:flex"
       >
         <li className=" p-4 hover:text-orange-500">
           <Link href="#about-container">About</Link>
@@ -142,7 +144,7 @@ const Header = () => {
         </ul>
       </div>
     </div>
-  );
+  )
 };
 
 export default Header;
