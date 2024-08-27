@@ -1,118 +1,91 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import starIcon from '../assets/icons/starIcon.png';
-import rightArrowIcon from '../assets/icons/rightArrowIcon.png';
+import React from 'react'
+import {
+  FaHome,
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaBuilding,
+  FaWarehouse,
+  FaHome as FaHouse,
+  FaBriefcase,
+  FaParking,
+} from 'react-icons/fa'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <div className="relative p-4 mb-4 mx-[10px] border-t-2 border-solid border-[#EDEFF2]">
-      {/* Row 1 */}
-      <div className="sm:flex justify-center items-center py-[20px] sm:py-[90px] px-2 ">
-        {/* text  */}
-        <p className="text-2xl text-center leading-[30px] font-bold text-[#4D5E80] capitalize mb-10 sm:mb-0 dark:text-white">
-          constructor
-        </p>
-        {/* menu  */}
-        <div className="relative flex gap-5 justify-center items-centers  sm:w-[450px] ">
-          <ul className="grid  sm:grid-cols-3 gap-5 text-center sm:gap-10 ">
-            <li>
-              <Link href="/" className="py-2 hover:text-orange-500">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="py-2 hover:text-orange-500">
-                Gallery
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="py-2 hover:text-orange-500">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="py-2 hover:text-orange-500">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="py-2 hover:text-orange-500">
-                Deals
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="py-2 hover:text-orange-500">
-                Contacts
-              </Link>
-            </li>
-          </ul>
-        </div>
-        {/* rating */}
-        <div className="flex flex-col items-center sm:items-start gap-1 mt-5 sm:mt-0">
-          <div className="flex">
-            <Image
-              src={starIcon}
-              alt="ratings "
-              className="w-[30px] h-[30px]"
-            />
-            <Image
-              src={starIcon}
-              alt="ratings "
-              className="w-[30px] h-[30px]"
-            />
-            <Image
-              src={starIcon}
-              alt="ratings "
-              className="w-[30px] h-[30px]"
-            />
-            <Image
-              src={starIcon}
-              alt="ratings "
-              className="w-[30px] h-[30px]"
-            />
-            <Image
-              src={starIcon}
-              alt="ratings "
-              className="w-[30px] h-[30px]"
-            />
+    <section className="footer bg-gray-800 text-white py-8">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap -mx-4">
+          <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">
+            <FaHome className="w-12 h-16 text-white" />
+            <span className="block mt-3 mb-3 text-lg">
+              Discover your Dream Home with Mesherak Real State
+            </span>
+            <div className="flex space-x-4">
+              <FaFacebook className="w-6 h-6" />
+              <FaTwitter className="w-6 h-6" />
+              <FaInstagram className="w-6 h-6" />
+            </div>
           </div>
-          <div className="flex justify-center items-center p-2">
-            <p>5.2M satisfied customers</p>
+          <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">
+            <p className="text-xl font-semibold mb-4">Menu</p>
+            <ul className="space-y-2">
+              <li>Home</li>
+              <li>Blog</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">
+            <p className="text-xl font-semibold mb-4">Categories</p>
+            <ul className="space-y-2">
+              <li className="flex items-center">
+                <FaHouse className="mr-2" />
+                House
+              </li>
+              <li className="flex items-center">
+                <FaBuilding className="mr-2" />
+                Apartment
+              </li>
+              <li className="flex items-center">
+                <FaBriefcase className="mr-2" />
+                Office
+              </li>
+              <li className="flex items-center">
+                <FaWarehouse className="mr-2" />
+                Warehouse
+              </li>
+              <li className="flex items-center">
+                <FaParking className="mr-2" />
+                Parking
+              </li>
+            </ul>
+          </div>
+          <div className="w-full md:w-1/2 lg:w-1/4 px-4">
+            <p className="text-xl font-semibold mb-4">Contact</p>
+            <ul className="space-y-2">
+              <li className="flex items-center">
+                <FaEnvelope className="mr-2" />
+                <span>support@nexus-labs.com</span>
+              </li>
+              <li className="flex items-center">
+                <FaMapMarkerAlt className="mr-2" />
+                <span>Addis Ababa, Ethiopia</span>
+              </li>
+              <li className="flex items-center">
+                <FaPhoneAlt className="mr-2" />
+                <span>0500 000 00 00</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </section>
+  )
+}
 
-      {/* Row 2 */}
-
-      <div className="relative py-0 px=[340px] border-t-2 border-solid border-[#EDEFF2] flex items-center justify-between gap-5">
-        <p className="capitalize text-[10px] sm:text-[13px] font-semibold leading-[25px] text-center text-bluePText dark:text-white">
-          © 2023 Company. All Rights Reserved.
-        </p>
-        <Link
-          href="https://www.figma.com/community/file/1216698613875563555/Company-One"
-          target="_blank"
-          className="capitalize text-[10px] sm:text-[13px] font-semibold leading-[25px] text-center text-bluePText hover:text-orange-500 dark:text-white"
-        >
-          Design by Spline One
-        </Link>
-        <div className="flex items-start p-4 gap-[57px]">
-          <Link
-            href="#"
-            className="capitalize text-[10px] sm:text-[13px] font-semibold leading-[25px] text-center text-bluePText hover:text-orange-500 dark:text-white"
-          >
-            terms
-          </Link>
-          <Link
-            href="#"
-            className="capitalize text-[10px] sm:text-[13px] font-semibold leading-[25px] text-center text-bluePText  hover:text-orange-500 dark:text-white"
-          >
-            privacy
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Footer;
+export default Footer
