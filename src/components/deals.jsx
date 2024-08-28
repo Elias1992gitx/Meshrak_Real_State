@@ -22,10 +22,9 @@ const Deals = () => {
 
       <div className="relative justify-center items-center">
         <p className="font-medium text-base text-center mt-20  text-bluePText">
-          Real estate is &quot;property consisting of land and the buildings on
-          <br />
-          it, along with its natural resources such as crops,
-          <br /> minerals or water, immovable property of this nature&quot;
+          Meshrak Real Estate includes special discounts on luxury apartments and a zero-down payment option for first-time buyers. <br/>
+           Enjoy flexible payment plans and secure your dream home easily. Plus, purchase now and <br/>
+           receive a complimentary home furnishing package with premium furniture.
         </p>
       </div>
 

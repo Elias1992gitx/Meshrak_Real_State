@@ -15,9 +15,10 @@ const Review = () => {
   }
 
   return (
-    <div className="w-full h-screen overflow-auto">
+    <div id="review" className="w-full h-screen overflow-auto">
       <Fade in>
         <Box
+          // className="inset-0 bg-black opacity-80"
           position="relative"
           backgroundImage={`url(${yy.src})`}
           backgroundPosition="center"
@@ -49,12 +50,17 @@ const Review = () => {
                   lineHeight="shorter"
                   marginBottom="1.5rem"
                 >
-                  <p className="text-8xl sm:text-10xl text-blue-700 opacity-5 font-black text-center z-0 absolute top-0 left-0 w-full uppercase dark:text-white">
+                  {/* <p className="text-8xl sm:text-10xl text-blue-700 opacity-5 font-black text-center z-0 absolute top-0 left-0 w-full uppercase dark:text-white">
                     contacts
-                  </p>
+                  </p> */}
                   <p className="hidden sm:block text-4xl text-white font-bold text-center z-20 relative capitalize mt-7 sm:mt-14 dark:text-gray-300 ">
                     get in touch now
                   </p>
+
+                  <p className="hidden sm:block text-2xl text-white font-bold text-center z-20 relative capitalize mt-4 sm:mt-14 dark:text-gray-300 ">
+                    Contact Meshrak Real Estate today to explore exclusive deals <br/> and make your dream home a reality!
+                  </p>
+
                 </Text>
               </Box>
               <Text fontSize={{ base: 'lg', sm: '2xl' }}></Text>

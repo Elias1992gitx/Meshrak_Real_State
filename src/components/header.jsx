@@ -5,6 +5,7 @@ import searchIcon from '../../src/assets/icons/search.png';
 import mesrakreal from '../../src/assets/images/mesrakreal.png'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import ThemeChanger from './themeChanger';
+import about from './about'
 
 const Header = () => {
   const [header, setHeader] = useState(false);
@@ -38,7 +39,7 @@ const Header = () => {
   return (
     <div
       style={{ background: `${headerColor}` }}
-      className=" fixed top-0 left-0 w-full h-20 shadow-xl flex justify-between items-center z-40 ease-in duration-300"
+      className=" fixed top-0 left-0 w-full h-20 shadow-xl flex justify-between items-center z-30 ease-in duration-300"
     >
       {/* Menu + Name */}
 
@@ -65,32 +66,37 @@ const Header = () => {
         />
       </div>
 
-      {/* navbar Links */}
+     <div className="mr-16">
 
-      <ul
+       <ul
         style={{ color: `${headerText}` }}
-        className="text-sm font-bold hidden lg:text-xl sm:flex"
+        className="text-sm font-semibold hidden lg:text-xl sm:flex"
       >
-        <li className=" p-4 hover:text-orange-500">
-          <Link href="#about-container">About</Link>
+        <li className="p-4 hover:text-orange-500">
+          <Link href="#about">About</Link>
         </li>
-        <li className=" p-4 hover:text-orange-500">
+        <li className="p-4 hover:text-orange-500">
           <Link href="#services">Services</Link>
         </li>
-        <li className=" p-4 hover:text-orange-500">
-          <Link href="#reviews">Reviews</Link>
+        <li className="p-4 hover:text-orange-500">
+          <Link href="#deals">Deals</Link>
         </li>
-        <li className=" p-4 hover:text-orange-500">
-          <Link href="#contact">Contact</Link>
+        <li className="p-4 hover:text-orange-500">
+          <Link href="#review">Contact</Link>
         </li>
+        
       </ul>
 
-      <p
+     </div>
+
+      {/* <p
         style={{ color: `${headerText}` }}
         className="hidden sm:flex text-sm font-bold ml-10 mr-5 hover:text-orange-500 cursor-pointer"
       >
-        Get In Touch
-      </p>
+       <Link href="#reviews" onClick={handleMobileHeader}>
+              Get in touch
+        </Link>
+      </p> */}
       <div className="mr-10">
         <ThemeChanger />
       </div>
@@ -117,7 +123,7 @@ const Header = () => {
       "
         >
           <li className="mx-7 py-4 text-4xl hover:text-orange-500">
-            <Link href="#about-container" onClick={handleMobileHeader}>
+            <Link href="./about" onClick={handleMobileHeader}>
               About
             </Link>
           </li>

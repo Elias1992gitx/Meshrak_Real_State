@@ -17,11 +17,11 @@ const Card = ({ imageSrc, title, price }) => {
               <Image src={eyeIcon} alt="icon" className="w-6 h-6" />
               <p className="font-black text-[10px] leading-5 text-white">65</p>
             </div>
-            <div className="flex justify-center items-center bg-black bg-opacity-[50%] rounded-[5px] ml-[10px] px-[10px] py-[5px] ">
+            {/* <div className="flex justify-center items-center bg-black bg-opacity-[50%] rounded-[5px] ml-[10px] px-[10px] py-[5px] ">
               <p className="font-black text-[10px] leading-5 text-white text-center">
-                1995
+                
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -32,12 +32,12 @@ const Card = ({ imageSrc, title, price }) => {
           <p className=" text-2xl leading-[30px] font-bold text-cardText py-[10px] dark:text-white ">
             {price}
           </p>
-          <p className="text-[13px] leading-[25px] text-blueCardSubTitle font-bold py-[10px]  dark:text-white">
+          {/* <p className="text-[13px] leading-[25px] text-blueCardSubTitle font-bold py-[10px]  dark:text-white">
             14 Patrick Brem Ct. Mahwah, NJ07430
-          </p>
+          </p> */}
           <p className="text-xs leading-5 text-blueCardSubTitle font-bold dark:text-white">
-            3 Beds&nbsp;&nbsp;-&nbsp;&nbsp;2 baths&nbsp;&nbsp;-&nbsp;&nbsp;3,450
-            sqft
+            3 Beds&nbsp;&nbsp;-&nbsp;&nbsp;2 baths&nbsp;&nbsp;-&nbsp;&nbsp;120 to 250 sq meters
+            
           </p>
         </div>
       </div>

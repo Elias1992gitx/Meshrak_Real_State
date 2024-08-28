@@ -52,9 +52,9 @@ const HomePage = () => {
         />
 
         <About
-          cardTitle1="15 years"
+          cardTitle1="10 years"
           cardSubText1="in business"
-          cardTitle2="$1 billion"
+          cardTitle2="150 million Birr"
           cardSubText2="property brokered"
           cardTitle3="10,000"
           cardSubText3="transactions"

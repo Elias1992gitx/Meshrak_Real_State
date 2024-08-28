@@ -1,131 +1,150 @@
-import { useState } from 'react';
-import Card from './card';
-import cardImageBg1 from '../assets/images/Image.png';
-import cardImageBg2 from '../assets/images/Image-2.png';
-import cardImageBg3 from '../assets/images/Image-3.png';
-import cardImageBg4 from '../assets/images/Image-4.png';
-import cardImageBg5 from '../assets/images/Image-5.png';
-import cardImageBg6 from '../assets/images/Image-6.png';
-import cardImageBg7 from '../assets/images/Image-7.png';
-import cardImageBg8 from '../assets/images/Image-8.png';
-import cardImageBg9 from '../assets/images/Image-9.png';
+import { useState } from 'react'
+import cardImageBg2 from '../assets/images/Image-2.jpg'
+import cardImageBg3 from '../assets/images/Image-3.png'
+import cardImageBg4 from '../assets/images/Image-4.jpg'
+import cardImageBg5 from '../assets/images/Image-5.jpg'
+import cardImageBg6 from '../assets/images/Image-6.png'
+import cardImageBg7 from '../assets/images/Image-7.jpg'
+import cardImageBg8 from '../assets/images/Image-8.png'
+import cardImageBg9 from '../assets/images/Image-9.png'
+import cardImageBg1 from '../assets/images/Image.jpg'
+import Card from './card'
+
+import apa2 from '../assets/images/apa-2.jpg'
+import apa3 from '../assets/images/apa-3.jpg'
+import apa from '../assets/images/apa.jpg'
+
+import off from '../assets/images/off.jpg'
+import off2 from '../assets/images/off-2.jpg'
+import off3 from '../assets/images/off-3.jpg'
+import off4 from '../assets/images/off-4.jpg'
+import off5 from '../assets/images/off-5.jpg'
+
+import par from '../assets/images/par.jpg'
+import par2 from '../assets/images/par-2.jpg'
+import par3 from '../assets/images/par-3.jpg'
 
 const HomeCardComponent = () => {
   return (
     <div className="flex flex-col sm:grid md:grid-cols-2 xl:grid-cols-3 gap-5 m-5 p-5 ">
-      <Card
-        imageSrc={cardImageBg1}
-        title="Modern Glass House"
-        price="$ 1,625,000"
-      />
-      <Card
-        imageSrc={cardImageBg2}
-        title="Modern Glass House"
-        price="$ 1,625,000"
-      />
-      <Card
-        imageSrc={cardImageBg3}
-        title="Modern Glass House"
-        price="$ 1,625,000"
-      />
-      <Card
-        imageSrc={cardImageBg4}
-        title="Modern Glass House"
-        price="$ 1,625,000"
-      />
+      <Card imageSrc={cardImageBg1} title="Modern Class House" />
+      <Card imageSrc={apa3} title="Modern Class House" />
+      <Card imageSrc={cardImageBg3} title="Modern Class House" />
+      <Card imageSrc={cardImageBg4} title="Modern Class House" />
       <Card
         imageSrc={cardImageBg5}
-        title="Modern Glass House"
-        price="$ 1,625,000"
+        title="Modern Class House"
+        // price="$ 1,625,000"
       />
-      <Card
-        imageSrc={cardImageBg6}
-        title="Modern Glass House"
-        price="$ 1,625,000"
-      />
-      <Card
-        imageSrc={cardImageBg7}
-        title="Modern Glass House"
-        price="$ 1,625,000"
-      />
-      <Card
-        imageSrc={cardImageBg8}
-        title="Modern Glass House"
-        price="$ 1,625,000"
-      />
-      <Card
-        imageSrc={cardImageBg9}
-        title="Modern Glass House"
-        price="$ 1,625,000"
-      />
+      <Card imageSrc={cardImageBg6} title="Modern Class House" />
+      <Card imageSrc={cardImageBg7} title="Modern Class House" />
+      <Card imageSrc={cardImageBg8} title="Modern Class House" />
+      <Card imageSrc={cardImageBg9} title="Modern Class House" />
     </div>
-  );
-};
+  )
+}
 
 const ApartmentCardComponent = () => {
   return (
     <div className="flex flex-col sm:grid md:grid-cols-2 xl:grid-cols-3 gap-5 m-5 p-5  ">
-      <Card
-        imageSrc={cardImageBg4}
-        title="Modern Glass House"
-        price="$ 2,500,000"
-      />
+      <Card imageSrc={apa} title="Modern Class Apartments" />
+      <Card imageSrc={apa2} title="Modern Class Apartments" />
+      <Card imageSrc={apa3} title="Modern Class Apartments" />
+      <Card imageSrc={cardImageBg7} title="Modern Class Apartments" />
+      <Card imageSrc={cardImageBg8} title="Modern Class Apartments" />
+      <Card imageSrc={cardImageBg9} title="Modern Class Apartments" />
+
+      <Card imageSrc={cardImageBg1} title="Modern Class Apartments" />
+      <Card imageSrc={cardImageBg2} title="Modern Class Apartments" />
+      <Card imageSrc={cardImageBg3} title="Modern Class Apartments" />
+    </div>
+  )
+}
+
+const OfficeCardComponent = () => {
+  return (
+    <div className="flex flex-col sm:grid md:grid-cols-2 xl:grid-cols-3 gap-5 m-5 p-5  ">
+      <Card imageSrc={off} title="Modern Class Office" />
+      <Card imageSrc={off2} title="Modern Class Office" />
+      <Card imageSrc={off5} title="Modern Class Office" />
+      <Card imageSrc={off4} title="Modern Class Office" />
+      <Card imageSrc={off3} title="Modern Class Office" />
+      <Card imageSrc={cardImageBg9} title="Modern Class Office" />
+
+      <Card imageSrc={cardImageBg1} title="Modern Class Office" />
+      <Card imageSrc={cardImageBg2} title="Modern Class Office" />
+      <Card imageSrc={cardImageBg3} title="Modern Class Office" />
+    </div>
+  )
+}
+
+
+const ParkingCardComponent = () => {
+  return (
+    <div className="flex flex-col sm:grid md:grid-cols-2 xl:grid-cols-3 gap-5 m-5 p-5  ">
+      <Card imageSrc={par} title="Modern Parking" />
+      <Card imageSrc={par2} title="Modern Parking" />
+      <Card imageSrc={par3} title="Modern Parking" />
+      <Card imageSrc={cardImageBg7} title="Modern Parking" />
+      <Card imageSrc={cardImageBg8} title="Modern Parking" />
+      <Card imageSrc={cardImageBg9} title="Modern Parking" />
+
+      <Card imageSrc={cardImageBg1} title="Modern Parking" />
+      <Card imageSrc={cardImageBg2} title="Modern Parking" />
+      <Card imageSrc={cardImageBg3} title="Modern Parking" />
+    </div>
+  )
+}
+
+const WarehouseCardComponent = () => {
+  return (
+    <div className="flex flex-col sm:grid md:grid-cols-2 xl:grid-cols-3 gap-5 m-5 p-5  ">
+      <Card imageSrc={apa} title="Modern Class Warehouse" />
+      <Card imageSrc={apa2} title="Modern Class Warehouse" />
+      <Card imageSrc={apa3} title="Modern Class Warehouse" />
+      <Card imageSrc={cardImageBg7} title="Modern Class Warehouse" />
+      <Card imageSrc={cardImageBg8} title="Modern Class Warehouse" />
+      <Card imageSrc={cardImageBg9} title="Modern Class Warehouse" />
+
+      <Card imageSrc={cardImageBg1} title="Modern Class Warehouse" />
+      <Card imageSrc={cardImageBg2} title="Modern Class Warehouse" />
+      <Card imageSrc={cardImageBg3} title="Modern Class Warehouse" />
+    </div>
+  )
+}
+
+
+const CommercialComponent = () => {
+  return (
+    <div className="flex flex-col sm:grid md:grid-cols-2 xl:grid-cols-3 gap-5 m-5 p-5 ">
+      <Card imageSrc={cardImageBg8} title="Modern Class Commercial" />
+      <Card imageSrc={apa3} title="Modern Class Commercial" />
+      <Card imageSrc={cardImageBg3} title="Modern Class Commercial" />
+      <Card imageSrc={cardImageBg6} title="Modern Class Commercial" />
       <Card
         imageSrc={cardImageBg5}
-        title="Modern Glass House"
-        price="$ 2,500,000"
+        title="Modern Class Commercial"
+        // price="$ 1,625,000"
       />
-      <Card
-        imageSrc={cardImageBg6}
-        title="Modern Glass House"
-        price="$ 2,500,000"
-      />
-      <Card
-        imageSrc={cardImageBg7}
-        title="Modern Glass House"
-        price="$ 2,500,000"
-      />
-      <Card
-        imageSrc={cardImageBg8}
-        title="Modern Glass House"
-        price="$ 2,500,000"
-      />
-      <Card
-        imageSrc={cardImageBg9}
-        title="Modern Glass House"
-        price="$ 2,500,000"
-      />
-
-      <Card
-        imageSrc={cardImageBg1}
-        title="Modern Glass House"
-        price="$ 2,500,000"
-      />
-      <Card
-        imageSrc={cardImageBg2}
-        title="Modern Glass House"
-        price="$ 2,500,000"
-      />
-      <Card
-        imageSrc={cardImageBg3}
-        title="Modern Glass House"
-        price="$ 2,500,000"
-      />
+      <Card imageSrc={cardImageBg9} title="Modern Class Commercial" />
+      <Card imageSrc={cardImageBg7} title="Modern Class Commercial" />
+      <Card imageSrc={cardImageBg1} title="Modern Class Commercial" />
+      <Card imageSrc={cardImageBg4} title="Modern Class Commercial" />
     </div>
-  );
-};
+  )
+}
 
 const tabs = [
   { label: 'Home', content: <HomeCardComponent /> },
   { label: 'Apartment', content: <ApartmentCardComponent /> },
-  { label: 'Office', content: <HomeCardComponent /> },
-  { label: 'Warehouse', content: <ApartmentCardComponent /> },
-  { label: 'Parking', content: <HomeCardComponent /> },
-  { label: 'Commercial', content: <ApartmentCardComponent /> },
-];
+  { label: 'Office', content: <OfficeCardComponent /> },
+  { label: 'Warehouse', content: <WarehouseCardComponent /> },
+  { label: 'Parking', content: <ParkingCardComponent /> },
+  { label: 'Commercial', content: <CommercialComponent /> },
+]
 
 const Tabs = () => {
-  const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const [activeTabIndex, setActiveTabIndex] = useState(0)
 
   return (
     <div className="flex flex-col justify-center items-center  ">
@@ -148,7 +167,7 @@ const Tabs = () => {
       </div>
       <div className="mt-4">{tabs[activeTabIndex].content}</div>
     </div>
-  );
-};
+  )
+}
 
-export default Tabs;
+export default Tabs

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import {
   FaHome,
   FaFacebook,
@@ -34,10 +35,18 @@ const Footer = () => {
           <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">
             <p className="text-xl font-semibold mb-4">Menu</p>
             <ul className="space-y-2">
-              <li>Home</li>
-              <li>Blog</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li>
+                <Link href="#">Home</Link>
+              </li>
+              <li>
+                <Link href="#about">About</Link>
+              </li>
+              <li>
+                <Link href="#services">Services</Link>
+              </li>
+              <li>
+                <Link href="#review">Contact</Link>
+              </li>
             </ul>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">

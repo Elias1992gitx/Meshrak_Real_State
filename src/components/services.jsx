@@ -28,18 +28,18 @@ const Services = () => {
 
       <div className="relative justify-center items-center">
         <p className="font-medium text-base text-center mt-20  text-bluePText">
-          We have developed a unique space where you can work and create. We
-          thought of everything to the smallest
-          <br /> detail. You will be able to conduct your business, conduct
-          meetings, meetings
+          We have build a unique space where you can Live and Work. We thought
+          of everything to the smallest
+          <br /> detail. You will be able to conduct your live, works, and
+          markets
         </p>
       </div>
 
       {/* 5 icons and names of services */}
       <div className="grid grid-cols-2 sm:flex justify-center items-center mt-16 ml-[40px]">
-        <div className="flex flex-col justify-center items-center mr-[30px] sm:mr-[60px] sm:ml-[50px] hover:scale-125 ease-in duration-200">
-          <div className="bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
-            <Image src={houseIcon} alt="house" className="w-11 h-10" />
+        <div className="flex flex-col justify-center items-center mr-[30px] sm:mr-[60px] sm:ml-[50px]  hover:scale-125 ease-in duration-200">
+          <div className="hover:bg-blue-100 bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
+            <Image src={houseIcon} alt="house" className="w-20 h-16" />
             <p className="font-bold text-sm leading-6  text-center text-blueCardTitle dark:text-gray-200 ">
               House
             </p>
@@ -47,12 +47,8 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col mr-[60px] hover:scale-125  ease-in duration-200">
-          <div className="bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
-            <Image
-              src={apartmentIcon}
-              alt="apartment"
-              className="w-[45px] h-[45px]"
-            />
+          <div className="hover:bg-blue-100 bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
+            <Image src={apartmentIcon} alt="apartment" className="w-20 h-16" />
             <p className="font-bold text-sm leading-6  text-center text-blueCardTitle dark:text-gray-200 ">
               Apartment
             </p>
@@ -60,8 +56,8 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col  mr-[60px] hover:scale-125  ease-in duration-200">
-          <div className="bg-white h-[120px] w-[120px] sm:w-[166px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
-            <Image src={officeIcon} alt="office" className="w-10 h-10" />
+          <div className="hover:bg-blue-100 bg-white h-[120px] w-[120px] sm:w-[166px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
+            <Image src={officeIcon} alt="office" className="w-18 h-16" />
             <p className="font-bold text-sm leading-6  text-center text-blueCardTitle dark:text-gray-200 ">
               Office
             </p>
@@ -69,8 +65,8 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col  mr-[60px] hover:scale-125  ease-in duration-200">
-          <div className="bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
-            <Image src={warehouseIcon} alt="warehouse" className="w-10 h-10" />
+          <div className="hover:bg-blue-100 bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
+            <Image src={warehouseIcon} alt="warehouse" className="w-20 h-16" />
             <p className="font-bold text-sm leading-6  text-center text-blueCardTitle dark:text-gray-200 ">
               Warehouse
             </p>
@@ -78,8 +74,8 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col  mr-[60px] hover:scale-125  ease-in duration-200">
-          <div className="bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
-            <Image src={parkingIcon} alt="parking" className="w-[26px] h-11" />
+          <div className="hover:bg-blue-100 bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
+            <Image src={parkingIcon} alt="parking" className="w-20 h-16" />
             <p className="font-bold text-sm leading-6  text-center text-blueCardTitle dark:text-gray-200 ">
               Parking
             </p>
@@ -87,7 +83,7 @@ const Services = () => {
         </div>
       </div>
     </div>
-  );
+  )
 };
 
 export default Services;
