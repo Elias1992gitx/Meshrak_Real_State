@@ -18,7 +18,7 @@ const Hero = ({ address, phone, email }) => {
         fill
         className="w-full h-screen bg-no-repeat object-cover object-center"
       />
-      <div className="w-full h-screen relative z-20 flex flex-col justify-center items-center">
+      <div className="w-full h-screen relative z-20 flex flex-col justify-center items-center mt-6">
         <button className="mt-2 hidden lg:block bg-orange-600 hover:bg-orange-500 px-2 py-1 rounded-2xl text-white h-6 w-28 font-black text-xs uppercase cursor-pointer">
           Real Estate
         </button>
