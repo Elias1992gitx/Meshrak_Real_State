@@ -1,18 +1,21 @@
-import { useState, useEffect } from 'react';
-import { RiMoonLine, RiSunLine } from 'react-icons/ri';
-import { useTheme } from 'next-themes';
+import { useState, useEffect } from 'react'
+import { RiMoonLine, RiSunLine } from 'react-icons/ri'
+import { useTheme } from 'next-themes'
 
 const ThemeChanger = () => {
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(false)
 
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    setMounted(true)
+    if (!theme) {
+      setTheme('light')
+    }
+  }, [theme, setTheme])
 
   if (!mounted) {
-    return null;
+    return null
   }
 
   return (
@@ -30,7 +33,7 @@ const ThemeChanger = () => {
         )}
       </button>
     </>
-  );
-};
+  )
+}
 
-export default ThemeChanger;
+export default ThemeChanger

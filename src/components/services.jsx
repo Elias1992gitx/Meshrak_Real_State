@@ -56,7 +56,7 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col  mr-[60px] hover:scale-125  ease-in duration-200">
-          <div className="hover:bg-blue-100 bg-white h-[120px] w-[120px] sm:w-[166px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
+          <div className="hover:bg-blue-100 bg-white h-[120px] w-[120px] sm:w-[130px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
             <Image src={officeIcon} alt="office" className="w-18 h-16" />
             <p className="font-bold text-sm leading-6  text-center text-blueCardTitle dark:text-gray-200 ">
               Office
