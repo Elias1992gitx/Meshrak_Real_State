@@ -23,7 +23,7 @@ const ThemeChanger = () => {
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
         aria-label="Toggle Dark Mode"
       >
-        {theme === 'dark' ? (
+        {theme === 'light' ? (
           <RiMoonLine size={30} />
         ) : (
           <RiSunLine size={30} color="white" />
